@@ -17,3 +17,5 @@ jobs:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
           assignees: cokyman
           numOfAssignee: 1
+    - name: 'Generate title and description'
+      run: npm run generate-title-description
